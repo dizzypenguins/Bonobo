@@ -75,7 +75,7 @@ namespace Bonobo
         {
           Color oc = image.GetPixel(j, i);
           int grayScale = (int)((oc.R * 0.3) + (oc.G * 0.59) + (oc.B * 0.11));
-          Console.Write(grayScale);
+          Console.Write(GetShade(grayScale));
         }
 
         Console.WriteLine("");
